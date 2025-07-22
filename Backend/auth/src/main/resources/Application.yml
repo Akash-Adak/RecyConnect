@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Auth-application
+  datasource:
+    url: jdbc:mysql://localhost:3306/authdb
+    username: root
+    password: Akash@2003
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 9091
+
+jwt:
+  secret: xwVZAWDYBDYzKthTRK1+ep92ThtdFVl92yiYa0VzOGoEbFW+X8qJi2m7y46zAJI5oIbmGRR5TEeXsFLUaEQK3Q==
+  expiration: 86400000
