@@ -1,15 +1,24 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
+import FindServicesPage from './pages/FindServicesPage';
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Navbar />
       <main className="flex-grow container mx-auto p-6">
-        {/* Page content will go here */}
-        <h1 className="text-3xl font-bold">Welcome to RecyConnect!</h1>
-        <p>Main content area.</p>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<FindServicesPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          {/* We will add more routes for Learn, Dashboard etc. later */}
+        </Routes>
       </main>
       <Footer />
     </div>
