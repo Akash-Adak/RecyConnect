@@ -24,6 +24,7 @@ const Navbar = () => {
           <Link to="/" className="text-gray-600 hover:text-green-600 transition-colors">Home</Link>
           <Link to="/services" className="text-ray-600 hover:text-green-600 transition-colors">Find Services</Link>
           <Link to="/learn" className="text-gray-600 hover:text-green-600 transition-colors">Learn</Link>
+          <Link to="/dashboard" className="text-gray-600 hover:text-green-600 transition-colors">Dashboard</Link>
           <Link to="/login" className="bg-gray-200 text-gray-800 py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors">Login</Link>
           <Link to="/signup" className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">Sign Up</Link>
         </div>
@@ -50,6 +51,7 @@ const Navbar = () => {
             <Link to="/" className="block py-2 px-6 text-gray-600 hover:bg-gray-100">Home</Link>
             <Link to="/services" className="block py-2 px-6 text-gray-600 hover:bg-gray-100">Find Services</Link>
             <Link to="/learn" className="block py-2 px-6 text-gray-600 hover:bg-gray-100">Learn</Link>
+            <Link to="/dashboard" className="block py-2 px-6 text-gray-600 hover:bg-gray-100">Dashboard</Link>
             <Link to="/login" className="block py-2 px-6 text-gray-600 hover:bg-gray-100">Login</Link>
             <Link to="/signup" className="block mx-4 my-2 bg-green-500 text-white text-center py-2 px-4 rounded-lg hover:bg-green-600">Sign Up</Link>
           </motion.div>

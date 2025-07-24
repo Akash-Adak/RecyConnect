@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import DashboardPage from './pages/DashboardPage';
 import HomePage from './pages/HomePage';
 import LearnPage from './pages/LearnPage';
 import LoginPage from './pages/LoginPage';
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<FindServicesPage />} />
           <Route path="/learn" element={<LearnPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
           {/* We will add more routes for Learn, Dashboard etc. later */}
